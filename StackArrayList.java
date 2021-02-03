@@ -1,15 +1,15 @@
-public class StackArrayList <T> implements Stack<T>{
+public class StackArrayList <E> implements Stack<E>{
     
     Calculadora cal = new Calculadora(); //Instancia de la calculadora.   
 
     @Override
-       public void Push(int num) {//Agregando elementos al ArrayList.
-           // TODO Auto-generated method stub
-           
-       }
+    public E Push(int num) {
+        // TODO Auto-generated method stub
+        return null;
+    }
 
        @Override
-       public T Pop() {//Moviendo para atrás un elemento del ArrayList y agregando un nuevo elemento al ArrayList.
+       public E Pop() {//Moviendo para atrás un elemento del ArrayList y agregando un nuevo elemento al ArrayList.
            // TODO Auto-generated method stub
            return null;
        }
@@ -21,7 +21,7 @@ public class StackArrayList <T> implements Stack<T>{
        }
        
        @Override
-       public T Peek() {//Busca la última entrada del ArrayList y los imprime.
+       public E Peek() {//Busca la última entrada del ArrayList y los imprime.
            // TODO Auto-generated method stub
            return null;
        }
