@@ -15,6 +15,7 @@ public class controlador { //Clase main: esta clase es la encargda de tener la i
     public static void main(String[] args){
        
         Calculadora ca = new Calculadora(); //Instancia de la clase calculadora.
+        
                 //Abriendo el archivo .txt para su lectura.
                 try {
                     
@@ -33,7 +34,7 @@ public class controlador { //Clase main: esta clase es la encargda de tener la i
  
                      s.close();//Cerrando el archivo.
                     
-                    ca.Calculo(expresion); //Llamando al método de Calculo para hacer las operaciones que aparezcan en el archivo.
+                     ca.Calculo(expresion); //Llamando al método de Calculo para hacer las operaciones que aparezcan en el archivo.
 
                      } catch (Exception errorBusq){
                          System.out.println("Archivo no encontrado"); //Diciendo que no se encontró el archivo.

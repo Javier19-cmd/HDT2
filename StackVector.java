@@ -11,9 +11,9 @@ public class StackVector<E> implements Stack<E>{ //Esta clase implementa de la c
      Vector data = new Vector<E>(); 
 
     @Override
-    public void Push(E a) {//Agregando elementos al Vector.
+    public void Push(E expresion) {//Agregando elementos al Vector.
         
-        data.addElement(a); //Agregando los números al Vector.
+        data.addElement(expresion); //Agregando los números al Vector.
         //return null; 
     }
 
