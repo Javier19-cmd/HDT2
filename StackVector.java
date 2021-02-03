@@ -6,34 +6,35 @@ Sección: 10
 
 import java.util.*; //Importando todas las clases de java.
 
-public class StackVector<E> implements Stack<E>{ //Esta clase implementa de la clase Stack.
-    
-    Calculadora cal = new Calculadora(); //Instancia de la calculadora.
-    //Stack <String> operaciones = new StackArrayList<String>(); //Vector que almacena los números.    
+public class StackVector<E> implements Stack<E>{ //Esta clase implementa de la clase Stack.    
 
-    int ope[] = new int[10]; //Creando el vector que almacenará los dígitos.
-    int top = 0; //Índice del Vector. 
+     Vector data = new Vector<E>(); 
 
     @Override
-    public E Push(int num) {
+    public void Push(E a) {//Agregando elementos al Vector.
         
-        ope[0] = num; //Ingresando los dígitos al Vector.
-        top++; //Aumento del índice del Vector.
-        return null; 
+        data.addElement(a); //Agregando los números al Vector.
+        //return null; 
     }
 
     @Override
     public E Pop() {//Remueve el último elemento del Vector y coloca el nuevo elemeto en el mismo Vector.
-        int datos; //Variable a usar para eliminar el último elemento del Vector. 
-
-        datos = ope[top]; //Eliminando el último elemento del Vector.
+        
+        data.removeElementAt(0); //Eliminando el penúltimo elemento de la lista.
+        data.removeElementAt(1); //Eliminando el último elemento de la lista.
 
         return null;
     }
 
     @Override
     public boolean Empty() {//Testear si el vector está vacío.
-        // TODO Auto-generated method stub
+        
+        //Revisando que el Vector esté o no vacío.
+        if(data.isEmpty()){
+            System.out.println(data.isEmpty());
+        }else{
+            System.out.println("El vector se encuentra vacío.");
+        }
         return false;
     }
 
@@ -41,17 +42,15 @@ public class StackVector<E> implements Stack<E>{ //Esta clase implementa de la c
     public E Peek() {//Busca el resultado en la última entrada del Vector.
 
         //Imprimiendo la última entrada del Vector.
-        
-        for(int n : ope){
-            System.out.println(n + "");
-        }
-
+        System.out.println("El último elemento del vector es: " + data.elementAt(0)); //Imprimiendo el último elemento del Vector.
         return null;
     }
 
    @Override
    public int size() {//Ve el tamaño del Vector.
-    // TODO Auto-generated method stub
+    
+        System.out.println( "El tamaño del vector es: " + data.size()); 
+
     return 0;
 
        

@@ -13,45 +13,34 @@ public class controlador { //Clase main: esta clase es la encargda de tener la i
 
     
     public static void main(String[] args){
-        AbrirArchivo();
-
-    }
-
-
-    public static void AbrirArchivo(){
-           
-        //Abriendo el archivo .txt para su lectura.
+       
+        Calculadora ca = new Calculadora(); //Instancia de la clase calculadora.
+                //Abriendo el archivo .txt para su lectura.
                 try {
                     
-                   File arch = new File("datos.txt"); //Creando la variable arch para abrir el archivo .txt.
-                   Scanner s = new Scanner(arch);
-                   //FileReader fr = new FileReader(arch); //Lector del archivo.
-                   //BufferedReader br = new BufferedReader(fr); //Lector de las entradas de caracteres.
-    
-                    String cont; //Variable para imprimir el contenido del archivo.
+                    File arch = new File("datos.txt"); //Creando la variable arch para abrir el archivo .txt.
+                    Scanner s = new Scanner(arch); //Abriendo el archivo.
+                    //FileReader fr = new FileReader(arch); //Lector del archivo.
+                    //BufferedReader br = new BufferedReader(fr); //Lector de las entradas de caracteres.
+     
+                     String expresion; //Variable para imprimir el contenido del archivo.
+ 
+                     expresion = s.nextLine(); //Leyendo las líneas del archivo.
+ 
+                     System.out.println("Ent                           Op                               Pila");
+ 
+                     System.out.println(expresion); //Imprimiendo las operaciones.
+ 
+                     s.close();//Cerrando el archivo.
+                    
+                    ca.Calculo(expresion); //Llamando al método de Calculo para hacer las operaciones que aparezcan en el archivo.
 
-                    cont = s.nextLine(); //Leyendo las líneas del archivo.
+                     } catch (Exception errorBusq){
+                         System.out.println("Archivo no encontrado"); //Diciendo que no se encontró el archivo.
+                      
+                     }
 
-                    System.out.println("Ent                           Op                               Pila");
-
-                    System.out.println(cont); //Imprimiendo las operaciones.
-
-                    for(int i = 1; i < cont.length(); i++){
-                        if(cont.contains("+")  && Character.isDigit(cont.charAt(i))){
-                            int a = Integer.valueOf(cont.charAt(i)) + Integer.valueOf(cont.charAt(i)); 
-                            
-                            System.out.println(a);
-
-                            i--;
-                        }  
-                    }
-
-                    s.close();//Cerrando el archivo.
-            
-                    } catch (Exception errorBusq){
-                        System.out.println("Archivo no encontrado"); //Error al encontrar el archivo.
-                     
-                    }
     }
+
 
 }

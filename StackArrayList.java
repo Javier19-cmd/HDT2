@@ -1,11 +1,13 @@
+import java.util.ArrayList; //Importando la clase ArrayList para que almacenar los datos que se obtendrán. 
+
 public class StackArrayList <E> implements Stack<E>{
     
-    Calculadora cal = new Calculadora(); //Instancia de la calculadora.   
+    ArrayList<E> data = new ArrayList<E>();
 
     @Override
-    public E Push(int num) {
-        // TODO Auto-generated method stub
-        return null;
+    public void Push(E a) {
+        data.add(a);//
+        //return null;
     }
 
        @Override
@@ -16,7 +18,7 @@ public class StackArrayList <E> implements Stack<E>{
 
        @Override
        public boolean Empty() {//Revisando que el ArrayList esté vacía. 
-           // TODO Auto-generated method stub
+           
            return false;
        }
        
