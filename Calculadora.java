@@ -46,7 +46,7 @@ public class Calculadora {//Clase calculadora: esta clase es la encargada de rea
                 //StackArrayList
                 //sta.Push(expresion); //Push del resultado.
 
-                System.out.println(a);
+                System.out.println(expresion);
                 
             }
             if(expresion.contains("-")  && Character.isDigit(expresion.charAt(i))){
@@ -111,7 +111,7 @@ public class Calculadora {//Clase calculadora: esta clase es la encargada de rea
                 int a = (Integer.valueOf(expresion.charAt(i))) / (Integer.valueOf(expresion.charAt(i - 1))); //Operando los números del archivo de texto.
                 System.out.println(a);
 
-                expresion = String.valueOf(a); //Pasando de int a String los valores de la operación realizada.
+                expresion = String.valueOf(expresion); //Pasando de int a String los valores de la operación realizada.
 
                 //StackVector
                 st.Push(expresion); //Push del resultado.

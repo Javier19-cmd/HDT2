@@ -40,7 +40,7 @@ public class StackVector<E> implements Stack<E>{ //Esta clase implementa de la c
         }else{
             System.out.println("El vector se encuentra vacío.");
         }
-        return false;
+        return true;
     }
 
     @Override
