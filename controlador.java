@@ -28,8 +28,6 @@ public class controlador { //Clase main: esta clase es la encargda de tener la i
  
                      expresion = s.nextLine(); //Leyendo las líneas del archivo.
  
-                     System.out.println("Ent                           Op                               Pila");
- 
                      System.out.println(expresion); //Imprimiendo las operaciones.
  
                      s.close();//Cerrando el archivo.
@@ -37,7 +35,7 @@ public class controlador { //Clase main: esta clase es la encargda de tener la i
                      ca.Calculo(expresion); //Llamando al método de Calculo para hacer las operaciones que aparezcan en el archivo.
 
                      } catch (Exception errorBusq){
-                         System.out.println("Archivo no encontrado"); //Diciendo que no se encontró el archivo.
+                         System.out.println("El archivo no existe"); //Diciendo que no se encontró el archivo.
                       
                      }
 

@@ -5,10 +5,15 @@ Sección: 10
 */
 
 import java.util.*; //Importando todas las clases de java.
+import java.util.Vector; //Importando nuevamente Vector por si acaso.
 
 public class StackVector<E> implements Stack<E>{ //Esta clase implementa de la clase Stack.    
 
-     Vector data = new Vector<E>(); 
+     protected Vector<E> data; //Vector a usar.
+
+     public StackVector(){
+         data = new Vector<E>(); //Asignando a la variable "data" el vector.
+     }
 
     @Override
     public void Push(E expresion) {//Agregando elementos al Vector.
