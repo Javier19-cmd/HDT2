@@ -1,9 +1,8 @@
-/**
- * 
- * Interface Stack: Esta interface es la encargada de proveerle al Stack los métodos que estarán usando en la clase de StackVector.
- * @version 1.0 5/02/21
- * 
- */
+/*
+Nombre: Javier Sebastián Valle Balsells
+Carnet: 20159
+Sección: 10 
+*/
 
 public interface Stack <E>{//Clase que posee los métodos para las operaciones.
     

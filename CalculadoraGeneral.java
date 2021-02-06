@@ -1,8 +1,9 @@
-/*
-Nombre: Javier Sebastián Valle Balsells
-Carnet: 20159
-Sección: 10 
-*/
+/**
+ * 
+ * Esta es la interfaz que se encarga de proveerle a la clase calculadora el método de cálculo.
+ * @author Javier Sebastián Valle Balsells
+ * 
+ */
 
 public interface CalculadoraGeneral{ //Clase Interface que posee el método de Calculo. 
     

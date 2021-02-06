@@ -136,7 +136,7 @@ public class Calculadora {//Clase calculadora: esta clase es la encargada de rea
             
         }
 
-        st.Pop(); //Eliminando los últimos dos elementos del Vector.
+        //st.Pop(); //Eliminando los últimos dos elementos del Vector.
 
         return expresion; //Return del resultado que se obtendrá con las operaciones dadas.
         
@@ -147,13 +147,11 @@ public class Calculadora {//Clase calculadora: esta clase es la encargada de rea
         //Método para evaluar.
 
         /**
-         * 
          * @param operator, esta variable es la encargada de poder analizar a detalle las operaciones.
          * 
          * Método encargado de analizar que las operaciones estén correctas.
          * 
-         * 
-         * */ 
+         *  */ 
 
         //Evaluando si la expresión es igual.
         if(Calculo(operator).equals("1")){

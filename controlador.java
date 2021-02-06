@@ -5,9 +5,13 @@ Sección: 10
 */
 
 import java.util.*; //Importando todas las clases de java.
+
+import jdk.jfr.Timestamp;
+
 import java.io.CharArrayReader;
 import java.io.File; //Importando las clases necesarias para abrir el archivo .txt.
-import java.io.FileNotFoundException; //Importando la clase que tira el error de que no encuentra el archivo
+import java.io.FileNotFoundException; //Importando la clase que tira el error de que no encuentra el archivo.
+
 
 public class controlador { //Clase main: esta clase es la encargda de tener la instancia de la clase que manejará los métodos para las operaciones.
 
@@ -38,6 +42,7 @@ public class controlador { //Clase main: esta clase es la encargda de tener la i
                          System.out.println("El archivo no existe"); //Diciendo que no se encontró el archivo.
                       
                      }
+                     
 
     }
 
