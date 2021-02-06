@@ -1,12 +1,15 @@
-/*
-Nombre: Javier Sebastián Valle Balsells
-Carnet: 20159
-Sección: 10 
-*/
+/**
+ * 
+ * Clase main: Esta es la encargada de que todo el programa funcione correctamente.
+ * Se hizo el import de todas las clases. 
+ * Además de ello, se importaron las clases que se encargan de buscar el archivo .txt y de tirar error en caso de que el main no encuentre el archivo.
+ * 
+ * @author Javier Sebastián Valle Balsells Carné 20159
+ * @version 1.0
+ * 
+ */
 
 import java.util.*; //Importando todas las clases de java.
-
-import jdk.jfr.Timestamp;
 
 import java.io.CharArrayReader;
 import java.io.File; //Importando las clases necesarias para abrir el archivo .txt.
@@ -15,9 +18,22 @@ import java.io.FileNotFoundException; //Importando la clase que tira el error de
 
 public class controlador { //Clase main: esta clase es la encargda de tener la instancia de la clase que manejará los métodos para las operaciones.
 
-    
+    /**
+     * 
+     * Se creó el método main para poder darle la información necesaria del programa al usuario. 
+     * 
+     */
+
     public static void main(String[] args){
        
+        /**
+         * 
+         * En este método main se hizo la instancia de la clase calculadora, la cual es la encargada de operar todos los números que hay en el archivo .txt.
+         * Las línes 41 y 42 son las encargadas de abrir y escanear el archivo.
+         * El try-catch es el encargado de verificar el archivo y si no está o el nombre es diferente, se le da un mensaje de error al usuario.
+         * 
+         */
+
         Calculadora ca = new Calculadora(); //Instancia de la clase calculadora.
         
                 //Abriendo el archivo .txt para su lectura.

@@ -1,8 +1,10 @@
-/** 
+/**
+*  
 *  Clase encargada de hacer los cálculos necesarios al momento de que el main abre e identifica el archivo txt.
 *  @version 1.0 5/02/21
 *  @author Javier Sebastián Valle Balsells Carné 20159. 
 *  Se imporaton todas las clases y también las clases que se iban a ser encargadas de tirar el mensaje de error, en caso de que no se encontrara el archivo "datos.txt"
+
 */
 import java.util.*; //Importando todas las clases de java.
 import java.io.CharArrayReader;
@@ -18,7 +20,8 @@ public class Calculadora {//Clase calculadora: esta clase es la encargada de rea
 
     public static String Calculo(String expresion){//Método para hacer los cálculos.
         
-        /** 
+        /**
+         *  
          * Método encargado de analizar 
          * @param expresion este parámetro es el encargado de traer todas las expresiones que posee el .txt abierto. 
          * 
@@ -151,7 +154,6 @@ public class Calculadora {//Clase calculadora: esta clase es la encargada de rea
          * @param operator, esta variable es la encargada de poder analizar a detalle las operaciones.
          * 
          * Método encargado de analizar que las operaciones estén correctas.
-         * 
          * 
          * */ 
 
