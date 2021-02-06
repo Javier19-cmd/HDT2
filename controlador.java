@@ -31,6 +31,7 @@ public class controlador { //Clase main: esta clase es la encargda de tener la i
          * En este método main se hizo la instancia de la clase calculadora, la cual es la encargada de operar todos los números que hay en el archivo .txt.
          * Las línes 41 y 42 son las encargadas de abrir y escanear el archivo.
          * El try-catch es el encargado de verificar el archivo y si no está o el nombre es diferente, se le da un mensaje de error al usuario.
+         * También se imprimen las operaciones y los números.
          * 
          */
 

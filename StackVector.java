@@ -23,6 +23,7 @@ public class StackVector<E> implements Stack<E>{ //Esta clase implementa de la c
         
         /**
          * 
+         * Se creó de manera protegida al Vector.
          * Se asignó a la variable data al vector, para que así pueda almacenar los datos de las operaciones y operandos obtenidos.
          * 
          */
@@ -36,7 +37,6 @@ public class StackVector<E> implements Stack<E>{ //Esta clase implementa de la c
          * 
          * En éste método se agregan elementos al Vector. 
          * Cabe destacar que los operandos y operaciones se reciben como sobrecarga en al inicio del método.
-         *
          * 
          */
 
